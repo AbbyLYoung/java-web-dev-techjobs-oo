@@ -25,10 +25,7 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
-
-
     }
-
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
@@ -51,47 +48,57 @@ public class Job {
     //  match.
 
     public int getId() {
+
         return id;
     }
 
     public String getName() {
+
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String aName) {
+
+        this.name = aName;
     }
 
     public Employer getEmployer() {
+
         return employer;
     }
 
-    public void setEmployer(Employer employer) {
-        this.employer = employer;
+    public void setEmployer(Employer aEmployer) {
+        this.employer = aEmployer;
     }
 
     public Location getLocation() {
+
         return location;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setLocation(Location aLocation) {
+
+        this.location = aLocation;
     }
 
     public PositionType getPositionType() {
+
         return positionType;
     }
 
-    public void setPositionType(PositionType positionType) {
-        this.positionType = positionType;
+    public void setPositionType(PositionType aPositionType) {
+
+        this.positionType = aPositionType;
     }
 
     public CoreCompetency getCoreCompetency() {
+
         return coreCompetency;
     }
 
-    public void setCoreCompetency(CoreCompetency coreCompetency) {
-        this.coreCompetency = coreCompetency;
+    public void setCoreCompetency(CoreCompetency aCoreCompetency) {
+
+        this.coreCompetency = aCoreCompetency;
     }
 
 
