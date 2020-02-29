@@ -43,11 +43,46 @@ public class Job {
         return Objects.hash(getId());
     }
 
+    @Override
+    public String toString() {
+        int count = 0;
+        if(name == "" || name == null ){
+            name = "Data not available";
+            count++;
+        }
+        if(employer.getValue() == "" || employer.getValue() == null ){
+            employer = new Employer("Data not available");
+            count++;
+        }
+        if(location.getValue() == "" || location.getValue() == null ){
+            location = new Location("Data not available");
+            count++;
+        }
+        if(positionType.getValue() == "" || positionType.getValue() == null ){
+            positionType = new PositionType("Data not available");
+            count++;
+        }
+        if(coreCompetency.getValue() == "" || coreCompetency.getValue() == null ){
+            coreCompetency = new CoreCompetency("Data not available");
+            count++;
+        }
+
+        return  "\n ID = " + id +
+                "\n Name = " + name +
+                "\n Employer = " + employer +
+                "\n Location = " + location +
+                "\n PositionType = " + positionType +
+                "\n CoreCompetency = " + coreCompetency +
+                '\n';
+    }
+
+
+
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
-    public int getId() {
+    public Integer getId() {
 
         return id;
     }
